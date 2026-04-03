@@ -1,9 +1,9 @@
 :root {
-    --bg-dark: #0f172a;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --primary: #10b981;
-    --primary-hover: #059669;
+    --bg-dark: #000000;
+    --text-main: #f4f4f4;
+    --text-muted: #aaaaaa;
+    --primary: #ee9033;
+    --primary-hover: #d37a28;
     --secondary: #3b82f6;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -129,13 +129,13 @@ body {
 .btn-primary {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 15px rgba(238, 144, 51, 0.3);
 }
 
 .btn-primary:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 6px 20px rgba(238, 144, 51, 0.4);
 }
 
 .btn-secondary {
@@ -172,8 +172,9 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(to right, var(--primary), #34d399);
+    background: linear-gradient(to right, var(--primary), #f5a65b);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -237,7 +238,7 @@ body {
     height: 160px;
     border-radius: 50%;
     border: 8px solid var(--primary);
-    border-top-color: rgba(16, 185, 129, 0.2);
+    border-top-color: rgba(238, 144, 51, 0.2);
     margin: 0 auto 2rem;
     display: flex;
     flex-direction: column;
