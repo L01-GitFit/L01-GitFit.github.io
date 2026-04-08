@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFit - 404 Fat Not Found</title>
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS Script -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,7 +17,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Roboto', 'sans-serif'],
+                        sans: ['Lexend', 'sans-serif'],
                     },
                     colors: {
                         dark: {
@@ -42,7 +42,7 @@
         body {
             background-color: #000000;
             color: #F4F4F4;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lexend', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
@@ -297,7 +297,7 @@
                         </div>
                         <div class="flex-1 flex flex-col items-center justify-center text-center py-12 relative z-10">
                             <div class="text-8xl md:text-9xl leading-none mb-2 font-black tracking-tighter">Aa</div>
-                            <div class="text-2xl font-bold text-text-muted tracking-widest mt-4">ROBOTO</div>
+                            <div class="text-2xl font-bold text-text-muted tracking-widest mt-4">LEXEND</div>
                         </div>
                         <div class="flex justify-between text-text-muted text-sm pt-6 border-t border-gray-800 relative z-10">
                             <span class="font-normal text-lg">Regular 400</span>
@@ -318,21 +318,33 @@
                                 <i data-lucide="search" class="w-4 h-4"></i>
                             </div>
                             <!-- Button -->
-                            <div class="w-full bg-primary text-text-main font-bold p-4 rounded-xl text-center shadow-[0_4px_14px_0_rgba(238,144,51,0.39)] hover:shadow-[0_6px_20px_rgba(238,144,51,0.23)] hover:-translate-y-0.5 transition-all cursor-pointer">
+                            <div class="w-full bg-primary text-black text-2xl font-bold p-4 rounded-xl text-center shadow-[0_4px_14px_0_rgba(238,144,51,0.39)] hover:shadow-[0_6px_20px_rgba(238,144,51,0.23)] hover:-translate-y-0.5 transition-all cursor-pointer">
                                 Add to Workout
                             </div>
                             <!-- Tab bar -->
-                            <div class="w-full bg-[#000000] border border-gray-800 rounded-2xl p-5 flex justify-around items-center">
-                                <div class="flex flex-col items-center gap-1 cursor-pointer">
-                                    <i data-lucide="home" class="w-6 h-6 text-primary"></i>
-                                    <div class="w-1 h-1 bg-primary rounded-full mt-1"></div>
+                            <div class="w-full bg-[#000000] border border-gray-800 rounded-2xl p-2 flex justify-between items-center">
+
+                                <!-- HOME (active) -->
+                                <div class="flex flex-col items-center justify-center gap-1 
+                                            bg-[#2a1f16] text-primary px-6 py-3 rounded-xl cursor-pointer">
+                                    <i data-lucide="home" class="w-5 h-5"></i>
+                                    <span class="text-xs font-semibold tracking-wider">HOME</span>
                                 </div>
-                                <div class="cursor-pointer group">
-                                    <i data-lucide="plus-circle" class="w-6 h-6 text-text-muted opacity-60 group-hover:opacity-100 transition-opacity"></i>
+
+                                <!-- WORKOUT -->
+                                <div class="flex flex-col items-center justify-center gap-1 
+                                            text-text-muted opacity-70 hover:opacity-100 cursor-pointer transition">
+                                    <i data-lucide="dumbbell" class="w-5 h-5"></i>
+                                    <span class="text-xs font-semibold tracking-wider">WORKOUT</span>
                                 </div>
-                                <div class="cursor-pointer group">
-                                    <i data-lucide="user" class="w-6 h-6 text-text-muted opacity-60 group-hover:opacity-100 transition-opacity"></i>
+
+                                <!-- PROFILE -->
+                                <div class="flex flex-col items-center justify-center gap-1 
+                                            text-text-muted opacity-70 hover:opacity-100 cursor-pointer transition">
+                                    <i data-lucide="user" class="w-5 h-5"></i>
+                                    <span class="text-xs font-semibold tracking-wider">PROFILE</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
